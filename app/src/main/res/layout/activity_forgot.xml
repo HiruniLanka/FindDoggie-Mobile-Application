@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/loginbkg"
+    tools:context=".ForgotActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="left"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="40dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/edittext"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset Password"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <EditText
+                    android:id="@+id/username_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,DuplicateClickableBoundsCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:id="@+id/new_password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_password_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        tools:ignore="HardcodedText,VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+
+</LinearLayout>

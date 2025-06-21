@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31" >
+        <activity
+            android:name=".OrganizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearbyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InviteFriend"
+            android:exported="true" />
+        <activity
+            android:name=".PetCharityOrganizations"
+            android:exported="true" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".PostPetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Pet1ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Pet4ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Pet3ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Pet2ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdoptedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DataClass"
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBhQSBsVcHZU8aFk5NseF02_mIHS6KTt6A" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

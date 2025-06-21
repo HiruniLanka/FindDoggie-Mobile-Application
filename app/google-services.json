@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943254647634",
+    "project_id": "finddoggie-46977",
+    "storage_bucket": "finddoggie-46977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943254647634:android:54a716464bdafa32c1c08b",
+        "android_client_info": {
+          "package_name": "com.lab1.finddoggie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNXbTx5a6LICP1ImtboQOApaMkuJqYHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

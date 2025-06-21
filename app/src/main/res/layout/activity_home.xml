@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".HomeActivity"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:id="@+id/amazonName"
+                android:text="Pet Adoption"
+                android:textSize="25sp"
+                android:textColor="@color/purple"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/amazonImage"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/amazonDesc"
+                android:text="Save and rescue pets"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:textColor="@color/purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amazonName"
+                app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:id="@+id/amazonImage"
+                android:src="@drawable/doggie"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toEndOf="@id/amazonName"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:id="@+id/row1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amazonImage">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/postPet"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/clothingName"
+                            android:text="Post Pet"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/clothingImage"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/clothingImage"
+                            android:src="@drawable/post"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/adopted"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/elecName"
+                            android:text="Adopted"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/elecImage"/>
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/elecImage"
+                            android:src="@drawable/adopted"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/row1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/organizations"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/homeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/homeImage"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Organizations"
+                            android:textColor="@color/purple"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/homeImage"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/organization"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nearby"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/beautyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/beautyImage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Nearby pets"
+                            android:textColor="@color/purple"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/beautyImage"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/nearby"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:id="@+id/row3"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/row2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/gallery">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/galle"
+                            android:text="Gallery"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/pharmImage"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/pharmImage"
+                            android:src="@drawable/gallery"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/video">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/grocName"
+                            android:text="Videos"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/grocImage"/>
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/grocImage"
+                            android:src="@drawable/video"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="ObsoleteLayoutParam,VisualLintBottomNav"  />
+
+</RelativeLayout>
+

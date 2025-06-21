@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbkg"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    android:id="@+id/signup">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="15dp"
+        android:foregroundGravity="left"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/finddoggie" />
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="30px"
+            android:text="Welcome to Find Doggie!"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lavender_border"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColorHighlight="@color/cardview_dark_background"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lavender_border"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lavender_border"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lavender_border"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/lavender_border"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:background="@color/purple_500"
+        android:text="I'M IN"
+        android:textColor="#FFFFFF"
+        tools:ignore="TextSizeCheck" />
+
+</LinearLayout>
+
